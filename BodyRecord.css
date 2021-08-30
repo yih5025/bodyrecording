@@ -3,6 +3,7 @@
 }
 body{
    background-color: #b0aaa7;
+   font-family: 'Times New Roman', serif;
 }
 #wrapper{
     width: 80%;
@@ -20,16 +21,25 @@ body{
     text-align: center;
 }
 #leftNav{
-    border: solid 5px pink;
+   
     width: 30%;
+}
+#leftNav > form {
+    margin-top: 8px;
+}
+#leftNav > form > fieldset{
+    padding: 0;
+    margin : 0;
+}
+#leftNav > form > fieldset > input {
+    width: 208px;
+    height: 46px;
 }
 #title{
     width: 40%;
 }
 #rightNav{
     width: 30%;
-    display: flex;
-    justify-content: space-around;
 }
 #content{
     border: solid 5px yellow;
@@ -67,14 +77,31 @@ body{
 .gallery > video{
     width: 100%;
 }
-.day> .writing{
+.day > .writing{
     width: 80%;
     height: 30%;
     margin-left: 10%;
     margin-right: 10%;
 }
-#header > h1{
+#header > #title > h1{
     margin-left: 25px;
     margin-bottom: 10px;
     margin-top: 30px;
+    text-decoration: none;
+}
+#header > #title > a:link{
+    text-decoration: none;
+    color: #8d8986;
+}
+#header > #title > a:visited{
+    color: #8d8986;
+}
+#header > #title > a:hover{
+    color:#cfc0b9;
+}
+#rightNav ul.icons li{
+    display: inline-block;
+}
+#rightNav ul .icons li .label{
+    display: none;
 }

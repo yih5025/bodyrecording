@@ -5,22 +5,27 @@
     <title>BodyRecord</title>
     <script defer src="BodyRecord.js"></script>
     <link rel="stylesheet" href="BodyRecord.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="../fontello-17515401/css/fontello.css">
 </head>
 <body>
     <div id="wrapper">
         <header id="header">
             <nav id="leftNav">
                 <form action="">
-                    <fieldset>
-                        <input type="text">
-                    </fieldset>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">SEARCH</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="🔍Search">
+                      </div>
                 </form>
             </nav>
             <div id="title"> <a href="index.html"><h1>BODY_RE_CODE</h1></a></div>
             <nav id="rightNav">
-                <div id="writing">writing</div>
-                <div id="my">My</div>
-                <div id="setting">Setting</div>
+                <ul class="icons">
+                    <li><a href="#" class="icon-edit"><span class="label">writing</span></a></li>
+                    <li><a href="#" class="icon-user"><span class="label">user</span></a></li>
+                    <li><a href="#" class="icon-cog"><span class="label">setting</span></a></li>
+                </ul>
             </nav>
         </header>
         <section id="content">
